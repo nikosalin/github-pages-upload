@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+
+<style>
+*
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(12, 212, 219);
+}
+.box
+    {
+        width: 300px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom: 20px solid #03a9f4;
+    }
+.box h2
+{
+    color: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box ul
+{
+    position: relative;
+    background:#fff;
+}
+
+.box ul li
+{
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+}
+
+.box ul:hover li
+{
+    opacity: 0.2;
+}
+
+.box ul li:hover
+{
+    transform: scale(1.1);
+    z-index: 100;
+    background: #25bcff;
+    opacity: 1;
+}
+
+.box ul li span
+{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #25bcff;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.box ul li:hover span
+{
+    background: #fff;
+    color:#25bcff;
+}
+</style>
+
+
+</head>
+<body>
+    <div class="box">
+        <h2>Τα ταξίδια μου</h2>
+        <ul>
+            <li><span>1</span>Trento</li>
+            <li><span>2</span>mezzano</li>
+            <li><span>3</span>Venice</li>
+            <li><span>4</span>Belgrade</li>
+            <li><span>5</span>Ρέθυμνο</li>
+            <li><span>6</span>Ηράκλειο</li>
+            <li><span>7</span>Χανιά</li>
+            <li><span>8</span>Άγιος Νικόλαος</li>
+            <li><span>9</span>Ναύπλιο</li>
+            <li><span>10</span>Τρίκαλα</li>
+            <li><span>11</span>Ιωάννινα</li>
+            <li><span>12</span>Κέρκυρα</li>
+        </ul>
+    </div>
+
+
+</body>
+
+
+</html>

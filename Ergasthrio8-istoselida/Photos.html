@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Nikos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTC_ayRuPNtrBZXh1_JvZ4J4dOvF3yePQgB-bpbC0Q_peImvVU9&usqp=CAU');background-repeat:no-repeat;background-size:100%}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #467;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="../Ergasthrio8-istoselida/IMG_2855.JPG" style="width:100%">
+  <a href="Lafiotis-Nikos.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="About-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT ME</p>
+  </a>
+  <a href="Skills.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="Photos.html" class="w3-bar-item w3-button w3-hide-small">
+  	<i class="fa fa-th w3-xxlarge"></i>
+  	<p>photos</p>
+  	</a>
+  <a href="Portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  	<i class="#fa fa-file-powerpoint-o w3-xxlarge"></i>
+  	<p>Portfolio</p>
+  	</a>
+  <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="Lafiotis-Nikos.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="About-me.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="Skills.html" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" style="width:25% !important">Photos</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button" style="width:25% !important">Portfolio</a>
+    <a href="Contact.html" class="w3-bar-item w3-button" style="width:25 !important">contact</a>
+  </div>
+</div>
+
+<body>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Κρήτη-Ιταλία</h3>
+  <p class="w3-center w3-large">Τα δύο ομορφότερα μέρη που έχω ταξιδέψει και οι φωτογραφίες αυτες το αποδεικνύουν.<br>
+                  Για να δείτε τα ταξίδια μου, κοιτάτε την λίστα στο portfolio<br>
+                  Κάνε κλικ για να δείτε λεπτομέρειες για την κάθε φωτογραφία</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="irakleio_kritis.jpg" style="width:100%;margin-left:55px" onclick="onClick(this)" class="w3-hover-opacity" alt="Το κάστρο στο λιμάνι (Ηράκλειο 2018)">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="img_chania.jpg" style="width:100%;margin-left:40px" onclick="onClick(this)" class="w3-hover-opacity" alt="Παλιά πόλη (Χανιά 2018)">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="agios nikolaos.jpg" style="width:100%;margin-left:30px" onclick="onClick(this)" class="w3-hover-opacity" alt="Άγιος Νικόλαος 2018">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="reuymno.jpg" style="width:100%;margin-left:20px" onclick="onClick(this)" class="w3-hover-opacity" alt="Το λιμάνι του ρεθύμνου(2018)">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="Mezzano.jpg" style="width:100%;margin-left:55px" onclick="onClick(this)" class="w3-hover-opacity" alt="Λίμνη του χωριού Mezzano (2017)">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="trento-italy.jpg" style="width:100%;margin-left:40px" onclick="onClick(this)" class="w3-hover-opacity" alt="Καστροπολιτεία Trento (2017)">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="fontana.jpg" style="width:100%;margin-left:30px" onclick="onClick(this)" class="w3-hover-opacity" alt="Το συντριβάνι του Ποσειδώνα (Trentino 2017)">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="spinalog1.jpg" style="width:100%;margin-left:20px" onclick="onClick(this)" class="w3-hover-opacity" alt="Το κάστρο της σπιναλόγγας (2018)">
+    </div>
+  </div>
+</div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>	   
+  
+  
+  
+  <script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+  
+	  
+	 </p>
+<!--End Phtos Section -->
+
+</body>
+
+</html>

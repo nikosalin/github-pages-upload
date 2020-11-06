@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Nikos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/*body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}*/
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;height:1100px;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<style>
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Times New Roman', Times, serif;
+	}
+	
+	.container2
+	{
+		position: relative;
+		width: 500px;
+	}
+	
+	.container2 h2
+	{
+		color: #fff;
+	
+	}
+	
+	.container2 .skills
+	{
+		position: relative;
+		display: flex;
+		margin: 20px 0;
+		padding: 24px 10px 18px;
+		background: linear-gradient(#616161 0%, #333 10%, #222);
+		border-radius: 8px;
+		overflow: hidden;
+		border: 2px solid #000;
+		transition: 0.5s;
+	
+	}
+	
+	.container2 .skills::before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50%;
+		background: rgba(255,255,255,.1);
+		z-index: 10;
+	}
+	
+	.container2 .skills .Name
+	{
+		position: relative;
+		width: 110px;
+		text-align: right;
+		color: #fff;
+		margin-top: -2px;
+		text-transform: uppercase;
+	}
+	
+	.container2 .skills .Value
+	{
+		position: relative;
+		width: 40px;
+		text-align: left;
+		color: #fff;
+		margin-top: -2px;
+		text-transform: uppercase;
+	}
+	
+	.container2 .skills .percent
+	{
+		position: relative;
+		width: calc(100% - 150px);
+		height: 20px;
+		margin: 0 10px;
+		border-radius: 10px;
+		background: #151515;
+		box-shadow: inset 0 0 10px #000;
+		overflow: hidden;
+	}
+	
+	.container2 .skills .percent .progress
+	{
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 70%;
+		height: 100%;
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0 0 2px #000;
+		animation: animate 4s ease-in-out forwards;
+	
+	}
+	
+	@keyframes animate
+	{
+	
+		from
+		{
+			width: 0;
+		}
+	}
+	</style>
+
+
+<style>
+	*
+		{
+			margin: 0;
+			padding: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+	body
+	{
+		
+		display: flex;
+	/*	justify-content: center;*/
+		align-items: center;
+		min-height: 100vh;
+		background: #101010;
+	}
+	
+	.container
+	{
+		position: relative;
+		width: 900px;
+		display: flex;
+		justify-content: space-around;   
+	}
+	
+	.container .card
+	{
+		position: relative;
+		width: 250px;
+		background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 300px;
+		border-radius: 4px;
+		text-align: center;
+		overflow: hidden;
+		transition: 0.5s;
+	
+	}
+	
+	.container .card:hover
+	{
+		transform: translate(-10px);
+		box-shadow: 0 15px 35px rgba(0,0,0,.5);
+	}
+	
+	.container .card:before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -50%;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,.03);
+		z-index: 1;
+	}
+	
+	.percent
+	{
+		position: relative;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		box-shadow: inset 0 0 50px #000;
+		background: #222;
+		z-index: 1000;
+	}
+	
+	.percent .number
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+	}
+	
+	.percent .number h2
+	{
+		color: #777;
+		font-weight: 700;
+		font-size: 40px;
+		transition: 0.5s;
+	}
+	
+	.card:hover .percent .number h2
+	{
+		color: #fff;
+		font-size: 60px;
+	}
+	
+	.percent .number h2 span
+	{
+		font-size: 24px;
+		color: #777;
+	}
+	
+	.card:hover .percent .number h2 span
+	{
+		color: #fff;
+	}
+	
+	.text
+	{
+		position: relative;
+		color: #777;
+		margin-top: 20px;
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: 0.5s;
+	}
+	
+	.card:hover .text
+	{
+		color: #fff;
+	}
+	svg
+		{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			z-index: 1000;
+		}
+	
+	svg circle
+	{
+		width: 100%;
+		height: 100%;
+		fill: none;
+		stroke: #191919;
+		stroke-width: 10;
+		stroke-linecap: round;
+		transform: translate(5px,5px);
+	}
+	
+	svg circle:nth-child(2)
+	{
+		stroke-dasharray: 440;
+		stroke-dashoffset: 440;
+	}
+	
+	.card:nth-child(1) svg circle:nth-child(2)
+	{
+		stroke-dashoffset: calc(440 -  (440 * 90) / 100);
+		stroke: #00ff43;
+	}
+	
+	.card:nth-child(2) svg circle:nth-child(2)
+	{
+		stroke-dashoffset: calc(440 -  (440 * 75) / 100);
+		stroke: #00a1ff;
+	}
+	
+	.card:nth-child(3) svg circle:nth-child(2)
+	{
+		stroke-dashoffset: calc(440 -  (440 * 60) / 100);
+		stroke: #ff04f7;
+	}
+	
+	</style>
+
+
+<body class="w3-black" >
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center"> 
+  <!-- Avatar image in top left corner -->
+  <img src="../Ergasthrio8-istoselida/IMG_2855.JPG" style="width:100%">
+  <a href="Lafiotis-Nikos.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="About-me.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT ME</p>
+  </a>
+  <a href="Skills.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="Photos.html" class="w3-bar-item w3-button w3-hide-small">
+  	<i class="fa fa-th w3-xxlarge"></i>
+  	<p>photos</p>
+  	</a>
+  <a href="Portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  	<i class="#fa fa-file-powerpoint-o w3-xxlarge"></i>
+  	<p>Portfolio</p>
+  	</a>
+  <a href="Contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="Lafiotis-Nikos.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="About-me.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT ME</a>
+    <a href="Skills.html" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="Photos.html" class="w3-bar-item w3-button" style="width:25% !important">Photos</a>
+    <a href="Portfolio.html" class="w3-bar-item w3-button" style="width:25% !important">Portfolio</a>
+    <a href="Contact.html" class="w3-bar-item w3-button" style="width:25 !important">contact</a>
+  </div>
+</div>
+
+<body>
+ <!-- Skills Section -->
+  <div class="w3-padding-64 w3-content" id="skills">
+    <h2 class="w3-text-light-grey">Skills</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for skills -->
+    <p class="w3-wide">Programming</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:65%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Foreign Languages</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+    </div>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div> 
+    </div>
+    <p class="w3-wide">Traveling organizer</p> 
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div> 
+    </div> <br>   <!-- End skills grid -->
+    
+	
+	<div class="container2">
+        <div class="skills">
+            <span class="Name">Java</span>
+            <div class="percent">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <span class="Value">70%</span>
+        </div>
+        <div class="skills">
+            <span class="Name">Python</span>
+            <div class="percent">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+            <span class="Value">70%</span>
+        </div>
+        <div class="skills">
+            <span class="Name">Prolog</span>
+            <div class="percent">
+                <div class="progress" style="width: 75%;"></div>
+            </div>
+            <span class="Value">75%</span>
+        </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="card">
+            <div class="box">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>90<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">Html</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>75<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">CSS</h2>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="box">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>60<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">JavaScript</h2>
+            </div>
+        </div>
+
+
+
+    </div>  
+    
+
+</body>
+
+</html>
